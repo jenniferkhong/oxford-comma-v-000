@@ -1,11 +1,9 @@
 def oxford_comma(array)
-  array = ["a"]
-  array.join
-end
-
-def oxford_comma(two_array)
-  two_array = ["a", "b"]
-  two_array.split("and")
-end
-
-
+  if array.length == 1
+    array.join
+  elsif array.length == 2
+    array.split("and")
+  elsif array.length == 3
+    array.split("," "," "and")
+  else
+    return array.split(",")
